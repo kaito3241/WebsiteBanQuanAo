@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CssLogin.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="java.js"></script>
+
+
+    <title>Đăng Ký</title>
+    
+</head>
+<body>
+
+</body ng-app="myApp">
+<div class="Login">
+    <div class="form-box" ng-controller="myCtrl">
+        <div class="button-box">
+            <div id="btn"></div>
+              <button type="button" class="toggle-btn">Register</button>
+          </div>
+          <div class="social-icons">
+            <img src="image/fb.jpg">
+            <img src="image/tw.jpg">
+            <img src="image/gp.png">
+          </div>
+              <form id="register" class="input-group">
+                  <input type="text" class="input-field" name="username" ng-model="user.name" placeholder="User Id" required="">
+                  <input type="email" class="input-field" name="email" ng-model="user.email" placeholder="Email Id" required="">
+                  <input type="password" class="input-field" name="pass" ng-model="user.password" placeholder="Enter Password" required="">
+                  <input type="password" class="input-field" name="conf" ng-model="user.confirm" placeholder="Confirm Password" required="">
+                  <input type="checkbox" class="check-box"><span>I agree to the term & conditions</span>
+                  <button type="submit" ng-click="submit()" class="submit-btn">Register</button>
+               </form>
+    </div>
+   
+</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+   var app = angular.module("myApp",[]);
+       app.controller("myCtrl",function($scope){
+        
+          $scope.submit = function(){
+            console.log($scope.user);
+                // {name:"Trần Huy Hoàng", email: "hoanghuy@gmail.com", password:"hoang", confirm:"hoang"}
+                var pass = $scope.user.password;
+                var conf = $scope.user.confirm;
+                if(conf != pass){
+                    alert("mật khẩu nhập lại không đúng");
+                }
+                else{
+                    
+                    alert("mật khẩu nhập lại trùng khớp");
+                }
+
+            }
+       });
+</script>
+</body>
+</html>
