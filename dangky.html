@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="CSS/style.css">
+<!-- <link rel="stylesheet" href="CSS/carousel.css"> -->
+<script src="Javascript/carousel.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> -->
+<title>MegaBytes - Thông tin linh kiện chất lượng chính xác</title>
+</head>
+<body>
+
+
+   <!-- KHUNG ĐẦU -->
+   <!-- <div class="container">
+      <div class="row justify-content-between">
+         <div class="col">
+            <a class="navbar-brand" href="index.html">Mega<span>Bytes</span></a>
+         </div>
+      </div>
+  </div> -->
+
+  <!-- NAVBAR -- START -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand rounded-circle bg-primary" href="web.html"><span class="logo1">Shop</span><span class="logo2">Soo</span></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+         </button>
+
+         <form action="#" class="searchform order-lg-last">
+            <div class="form-group d-flex">
+               <input type="text" class="form-control pl-3" placeholder="Search">
+               <button class="btn btn-primary" type="submit" placeholder=""><span class="fa fa-search"></span></button>
+            </div>
+         </form>
+
+
+         <!-- NAVBAR LINK -->
+         <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav mr-auto text-center mgl-med">
+            <li class="nav-item"><a href="web.html" class="nav-link txt-001">Trang chủ</a></li>
+            <li class="nav-item active"><a href="cuahang.html" class="nav-link">Cửa hàng</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link txt-001">Bảng tin</a></li>
+         </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- NAVBAR -- END -->
+
+<!-- #################################################### -->
+
+<!-- BLOG -->
+
+<div class="container-fluid mgt-med">
+
+      <div class="col-sm-12 card">
+         <div class="row mt-4">
+            <span><input type="radio" name="get" class="ml-2" onclick="RadioDK(1);" checked> Thành viên</span>
+            <span><input type="radio" name="get" class="ml-3" onclick="RadioDK(2);"> Kinh doanh</span>
+         </div>
+         
+         <div id="dktv" class="container mt-3">
+            <h3>ĐĂNG KÝ THÀNH VIÊN</h3>
+            <form class="form-horizontal"  method="post" action="#" name="register">
+            
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="username">Tên đăng nhập:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="username" id="username" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="password">Mật khẩu:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="password" name="password" id="password" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="confirm_pass">Nhập lại mật khẩu:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="password" name="confirm_pass" id="confirm_pass" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="lastname">Tên đầy đủ:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="lastname" id="fullname" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="email">Email:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="email" id="email" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="phone">Số điện thoại:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="phone" id="phone" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  
+                </div>
+                <div class="col-sm-10">
+                  <input type="submit" name="action" id="submit"  value="Đăng ký" />
+                </div>
+                
+              </div>
+            </form>
+         </div>
+
+
+         <div id="dkkd" class="container mt-3">
+            <h3>ĐĂNG KÝ KINH DOANH</h3>
+            <form class="form-horizontal"  method="post" action="#" name="register">
+            
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="username">Tên đăng nhập:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="username2" id="username" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="password">Mật khẩu:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="password" name="password2" id="password" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="confirm_pass">Nhập lại mật khẩu:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="password" name="confirm_pass2" id="confirm_pass" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="lastname">Tên đầy đủ:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="lastname2" id="fullname" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="email">Email:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="email2" id="email" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-sm-2">
+                  <label for="phone">Số điện thoại:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input class="text" type="text" name="phone2" id="phone" />
+                </div>
+              </div>
+              <div class="row mt-2">
+               <div class="col-sm-2">
+                 <label for="phone">Tên cửa hàng:</label>
+               </div>
+               <div class="col-sm-10">
+                 <input class="text" type="text" name="storename" id="phone" />
+               </div>
+             </div>
+             <div class="row mt-2">
+               <div class="col-sm-2">
+                 <label for="phone">Mã số thuế (nếu có):</label>
+               </div>
+               <div class="col-sm-10">
+                 <input class="text" type="text" name="mst" id="phone" />
+               </div>
+             </div>
+
+             <div class="row mt-4">
+               <div class="col-sm-2">
+                 <label for="phone">Quảng cáo:</label>
+               </div>
+               <div class="col-sm-10">
+                 <input type="radio" name="qc"> Có
+                 <input class="mgl-min" type="radio" name="qc"> Không
+               </div>
+             </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  
+                </div>
+                <div class="col-sm-10">
+                  <input type="submit" name="action" id="submit"  value="Đăng ký" />
+                </div>
+                
+              </div>
+            </form>
+         </div>
+
+      </div>
+
+   </div>
+
+<!-- BLOG - END -->
+
+<!-- #################################################### -->
+
+   <!-- PHẦN FOOTER -- START -->
+   <hr class="solid hr-red">
+   <div class="container">
+      <div class="row">
+         
+         <div class="col-sm-3">
+            
+            <h4 class="contact-fnt1">Về MegaBytes</h4>
+            <hr class="solid">
+            <span class="ft-xanh">Tư vấn linh kiện</span><br>
+            <span class="ft-xanh">Lắp đặt phòng máy</span><br>
+            <span class="ft-xanh">Chạy quảng cáo</span><br>
+            <span class="ft-xanh">Thông tin cửa hàng</span><br>
+            <span class="ft-xanh">Liên kết nhanh</span><br>
+            <span class="ft-xanh">Tìm kiếm cửa hàng siêu tốc</span><br>
+            <span class="ft-xanh">Bảo hành</span><br>
+            <span class="ft-xanh">Giao hàng-vận chuyển</span><br>
+            <span class="ft-xanh">Chính sách bảo mật cho doanh nghiệp</span><br>
+         </div>
+         <hr class="solid">
+         <div class="col-sm-3">
+            
+            <h4 class="contact-fnt1">Thông Tin Liên Hệ</h4>
+            <hr class="solid">
+            <strong>Tư vấn lắp đặt phòng game</strong><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn A</span><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn B</span><br>
+            <hr class="solid">
+            <strong>Hotline</strong><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn A</span><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn B</span><br>
+            <hr class="solid">
+            <strong>Giao - nhận hàng</strong><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn A</span><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn B</span><br>
+         </div>
+         <hr class="solid">
+         <div class="col-sm-3">
+            
+            <h4 class="contact-fnt1">Thông Tin Hỗ Trợ</h4>
+            <hr class="solid">
+            <strong>Tư vấn nhanh</strong><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn A</span><br>
+            <span class="ft-xanh">01 12345 567 - Ng.Văn B</span><br>
+            <hr class="solid">
+            <strong>Trung tâm kỹ thuật</strong><br>
+            <a class="ft-str">Kỹ thuật Coin</a><br>
+            <a class="ft-str">Kỹ thuật máy tính</a><br>
+            <a class="ft-str">Kỹ thuật Camera</a><br>
+            <a class="ft-str">Chính sách bảo hành</a><br>
+            <a class="ft-str">Cách thức đăng ký</a><br>
+            <a class="ft-str">Cách thức quảng cáo</a><br>
+         </div>
+         <div class="col-sm-3">
+            
+          <h4 class="contact-fnt1">Kết Nối Với Chúng Tôi</h4>
+          <hr class="solid">
+          <div class="row text-center">
+             <div class="col-sm-4">
+                <a href="https://www.facebook.com/" class="icon-connect"><i class="fab fa-facebook-f"></i></a>
+             </div>
+             <div class="col-sm-4">
+                <a href="https://www.youtube.com/" class="icon-connect"><i class="fab fa-youtube"></i></a>
+             </div>
+             <div class="col-sm-4">
+                <a href="#" class="icon-connect"><i class="fab fa-wikipedia-w"></i></a>
+             </div>
+               
+            </div>
+            
+            <hr class="solid">
+            
+         </div>
+      </div>
+   </div>
+   <hr class="solid hr-red">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-4 smll-strong">
+            <strong>Địa chỉ dịch vụ:</strong><span> 12 ABC, P.5 Quận 11 TP.HCM </span><br>
+            <strong>Thời gian làm việc:</strong><span> T2-Chủ Mhật, 8h00-18h00 </span><br>
+            <strong>Thời gian đăng ký:</strong><span> T2-Chủ Nhật, 8h00-11h30 </span>
+         </div>
+         <div class="col-sm-4 smll-strong">
+            <strong>Địa chỉ CN1:</strong><span> 15 XYZ, P.6 Quận Tân Bình TP.HCM</span><br>
+            <strong>Thời gian làm việc:</strong><span> T2-Chủ Nhật, 9h30 - 19h00 </span>
+         </div>
+         <div class="col-sm-4 smll-strong">
+            <strong>Địa chỉ CN2:</strong><span> 20 GHK, P.5 Quận Tân Phú TP.HCM</span><br>
+            <strong>Thời gian làm việc:</strong><span> T2-Chủ Nhật, 9h30 - 19h00 </span>
+         </div>
+      </div>
+   </div>
+   <hr class="solid hr-red">
+   <div class="row text-center">
+      <div class="col-sm-12">
+         <p>&copy; Copyright 2019-2020 Bản quyền thuộc MegaBytes</p>
+      </div>
+      
+   </div>
+   <!-- PHẦN FOOTER -- END -->
+
+<!-- #################################################### -->
+
+    </div>
+
+
+
+
+
+
+
+
+
+<script src="Javascript/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
+</body>
+</html>
